@@ -1,0 +1,104 @@
+/* Load Font Graffiti dari folder lokal */
+@font-face {
+    font-family: 'GraffitiFont';
+    src: url('assets/fonts/BlowBrush.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #121212;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 3px solid #ff1e1e;
+}
+
+header h1 {
+    font-family: 'GraffitiFont', sans-serif;
+    font-size: 3rem;
+    color: #ff1e1e;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #000;
+}
+
+header p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #999;
+}
+
+/* Section */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #ff4c4c;
+    margin-bottom: 20px;
+    border-left: 5px solid #ff1e1e;
+    padding-left: 14px;
+}
+
+section p {
+    font-size: 1rem;
+    color: #d0d0d0;
+}
+
+/* Members List */
+.members ul {
+    list-style: none;
+    padding: 0;
+}
+
+.members li {
+    background-color: #222;
+    margin-bottom: 16px;
+    padding: 15px;
+    border-left: 4px solid #ff1e1e;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, border-left-color 0.3s ease;
+}
+
+.members li:hover {
+    background-color: #333;
+    border-left-color: #ff4c4c;
+}
+
+.members li a:hover {
+    text-decoration: underline;
+    color: #ff1e1e;
+}
+
+.members li strong {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #121212;
+    color: #888;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 3px solid #ff1e1e;
+}
